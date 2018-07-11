@@ -1,144 +1,325 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
-<body class="w3-light-grey">
+<head>
+	<title>Sample CV</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Generator" content="CV Maker - https://cvmkr.com/" />
+	<style type="text/css">
+	
+		body {
+			background: #f0f0f0;
+			margin: 0;
+			padding: 0;
+			
+			font-family: 'Helvetica Neue', Helvetica, Arial;
+			line-height: 18px;
+			font-size: 12px;
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+			color: #222;
+		}
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="m.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Jane Doe</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
-          <hr>
+		h1, h2, h3, h4 {
+			margin: 0 0 15px 0;
+			padding: 0;
+		}
+		h1 {
+			font-size: 300%;
+		}
+		h2 {
+			font-size: 210%;
+		}
+		h3 {
+			font-size: 130%;
+		}
+		
+		p {
+			margin: 0 0 10px 0;
+		}
+		
+		ul {
+			margin: 0;
+			padding: 0 0 0 10px;
+			list-style-type: square;
+		}
+		a {
+			color: #222;
+		}
+		/* ________________________________________________________ */
+		
+		.clear {
+			clear: both;
+		}
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Adobe Photoshop</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p>Photography</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
-            </div>
-          </div>
-          <p>Illustrator</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-          <p>Media</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <br>
+		#main {
+			background: #fff;
+			width: 900px;
+			padding: 35px;
+			margin: 0 auto 15px auto;
+			overflow: hidden;
+			
+			box-shadow: 0 0 6px #ccc;
+		}
+		
+		#title {
+			line-height: 42px;
+			border-bottom: 3px solid #000;
+			padding-bottom: 30px;
+			margin: 0px 0 30px 0;
+			font-weight: bold;
+		}
+		
+		#credit {
+			margin-bottom: 20px;
+			font-size: 11px;
+			color: #999;
+			text-align: center;
+		}
+			#credit a {
+				color: #999;
+			}
+		
+		p label {
+			font-weight: bold;
+			
+			font-size: 110%;
+			margin-right: 10px;
+		}
+			p label span.colon {
+				display: inline;
+			}
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>
-          <p>Spanish</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
-          </div>
-          <p>German</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div>
-          <br>
-        </div>
-      </div><br>
+		
+		.section {
+			margin-bottom: 20px;
+		}
+		
+		.item {
+			margin: 0 0 20px 0;
+		}
 
-    <!-- End Left Column -->
-    </div>
+		/*  _____________________________ */
+		.rtl {
+			direction: rtl;
+		}
 
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-        </div>
-      </div>
+		.photo .basic-info .set {
+			float: none !important;
+			width: auto !important;
+		}
+		.basic-info .address {
+			width: 40%;
+			float: left;
+		}
+		.basic-info .r {
+			float: right;
+			width: 58%;
+			text-align: right;
+		}
+			.basic-info label {
+				font-weight: bold;
+			}
+			.basic-info label, .basic-info span  {
+				display: inline !important;
+			}
+		.basic-info p {
+			margin: 0;
+		}
+		
+		.section .title {
+			background: #000;
+			float: left;
+			text-transform: uppercase;
+			font-size: 105%;
+			font-weight: bold;
+			word-wrap: break-word;
+			color: #fff;
+			padding: 4px 6px;
+			width: 16%;
+			margin-right: 30px;
+		}
+		.section .set {
+			float: left;
+			width: 78%;
+		}
+			.section .set h3 {
+				margin: 0;
+			}
+		.section span.value {
+			display: block;
+		}
+		.section h3 span.l, .section span.r {
+			width: 49%;
+			float: left;
+		}
+			.section span.r {
+				float: right;
+				text-align: right;
+			}
+			.section-education .school,
+			.section-work .job_title {
+				font-size: 100%;
+				display: block;
+				margin: 5px 0 5px 0;
+			}
 
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-          <p>Bachelor Degree</p><br>
-        </div>
-      </div>
+		/* ___ photo ___ */
+		#photo {
+			width: 160px;
+			height: 200px;
+			overflow: hidden;
+			float: left;
+			margin-top: 8px;
+			border-radius: 4px;
+		}
+		#photo img {
+			width: 100%;
+			height: auto;
+		}
+		.header.photo {
+			margin-left: 190px;
+		}
+		.header.photo #title {
+			text-align: left;
+		}
+		.header.photo .basic-info {
+			float: none;
+			padding: 0;
+		}
 
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
+		@media screen and (max-width: 950px) {
+			body {
+				background: #fff;
+			}
+			#main {
+				box-shadow: none;
+				padding: 0;
+				padding: 5px;
+			}
+		}
+	</style>
+</head>
+<body class="lang-en ">
+
+<div id="main">
+			<div id="photo">
+			<img src="http://files1.cvmkr.com/e8d968_2570027_6180485.jpg" alt="" />
+		</div>
+		<div class="header photo">
+	
+	<h1 id="title">MD MOSTAFIZUR RAHMAN</h1>
+	<div class="basic-info section">
+				<div class="set">
+		
+							<p class="address">
+					<span class="value">
+						Ka-31/A,Nodda<br />Dhaka-1212<br />Bangladesh					</span>
+				</p>
+						<div class="r">
+									<p class="email"><label>E-mail<span class="colon">:</span></label> <span class="value">mustafiz.iub@gmail.com</span></p>
+				
+									<p class="website"><label>Website<span class="colon">:</span></label> <span class="value">www.dotteq.com</span></p>
+				
+									<p class="phone"><label>Phone<span class="colon">:</span></label> <span class="value">+880 1718 844883</span></p>
+							</div>
+			<div class="clear"> </div>
+		</div><!-- set //-->
+		<div class="clear"> </div>
+	</div><!-- basic-info //-->
+
+			</div><div class="clear"> </div>
+	
+		
+			<div class="section section-1287593158087">
+			<h2 class="title">Objective</h2>
+			<div class="set">
+							<div class="item">
+								<span class="info">To work as a Web Developer in a progressive environment where I can utilize my skills and expertise
+for the benefit of the organization in the long run.</span>
+							</div>
+						</div>
+			<div class="clear"> </div>
+		</div>
+			<div class="section section-education">
+			<h2 class="title">Education</h2>
+			<div class="set">
+						<div class="item">
+							<h3><span class="course l">BSc. in Computer Science</span>
+						<span class="date r">May 2018 &mdash; December 2018</span>
+							</h3>
+							<div class="clear"> </div>
+							<span class="school">Independent University Bangladesh</span><div class="info">Completed 128 credits of 134 credit.</div><span class="clear"> </span>
+						</div>
+						
+						<div class="item">
+							<h3><span class="course l">HSC  (Science)</span>
+						<span class="date r">June 2011 &mdash; August 2013</span>
+							</h3>
+							<div class="clear"> </div>
+							<span class="school">Dhaka Bigyan College</span><span class="clear"> </span>
+						</div>
+						
+						<div class="item">
+							<h3><span class="course l">SSC (Science)</span>
+						<span class="date r">2006 &mdash; 2010</span>
+							</h3>
+							<div class="clear"> </div>
+							<span class="school">Kotchandpur Model Secondary School</span><span class="clear"> </span>
+						</div>
+						</div>
+			<div class="clear"> </div>
+		</div>
+			<div class="section section-work">
+			<h2 class="title">Work experience</h2>
+			<div class="set">
+								<div class="item">
+									<h3><span class="company l">Hope IT Limited</span>
+							<span class="date r">February 2018 &mdash; May 2018</span>
+								</h3>
+								<div class="clear"> </div>
+								<span class="job_title">Intern (Web &amp; Software Developer)</span><div class="info"><p>In Hope IT Limited i worked as a web developer(Back end).</p><ul><li>Worked in a team and done some large and complex projects.</li><li>Programming Languages:Raw php,Laravel,HTML,CSS, Bootstrap,Java Script,Google api.</li></ul></div><div class="clear"> </div>
+								</div>
+							</div>
+			<div class="clear"> </div>
+		</div>
+			<div class="section section-1530945572890">
+			<h2 class="title">Technical Skills</h2>
+			<div class="set">
+							<div class="item">
+								<span class="info"><ul><li>Structured Programming Language: C++.</li><li>Object-Oriented Programming Language:C#,Asp.net,Node.js,Raw PHP,Laravel(Basic Level) ,Java.</li><li> Web Programming Language: HTML, HTML5, CSS, CSS3, Bootstrap, JavaScript, jQuery.</li><li> Database: MySQL, MSSQL , Mongo DB.</li><li>Api:Google Api</li><li>Operating System: Windows XP, Windows 7, Windows 8, Windows 10.</li><li>Graphic:Adobe Photoshop,</li><li>Using Github.</li></ul></span>
+							</div>
+						</div>
+			<div class="clear"> </div>
+		</div>
+			<div class="section section-1531208548823">
+			<h2 class="title">Projects</h2>
+			<div class="set">
+							<div class="item">
+								<span class="info"><span style="font-weight:bold;">1.Smart Phone Store</span><div><span>Description:</span>Its basically a e-commerce system.There are two panel one is user panel and another is admin panel.User can check product description and order product.In admin panel  admin can add new product category ,new product,can add promotional product,can check available product and ordered product.</div><div><br /></div><div><span>Language:</span> Asp.net,C#,MSSQL,HTML,CSS,Bootstrp,Jquery.</div><div><span>Github Link:</span><span><a>https://github.com/mustafiz-rahman/Smartphone-store</a></span></div><div><br /></div><div><br /></div></span>
+							</div>
+						</div>
+			<div class="clear"> </div>
+		</div>
+			<div class="section section-interests">
+			<h2 class="title">Interests</h2>
+			<div class="set">
+							<div class="item">
+								<span class="info">Music, Reading, Painting</span>
+							</div>
+						</div>
+			<div class="clear"> </div>
+		</div>
+			<div class="section section-references">
+			<h2 class="title">References</h2>
+			<div class="set">
+							<div class="item">
+								<span class="info">Mr Azad Hossain<div>ceo,Mahin Group</div><div>Phone:+880 1712 809355</div></span>
+							</div>
+						</div>
+			<div class="clear"> </div>
+		</div>
+		
 </div>
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
+	<div id="credit">Made with <a href="https://cvmkr.com/">CV Maker</a></div>
+	
 </body>
 </html>
